@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+
+:root {
+    --font-primary: 'Poetsen One', sans-serif;
+    --color1: #ecf8d4;
+    --color2: #e0deab;
+    --color3: #cb8e5f;
+    --color4: #85685a;
+    --color5: #0d0502;
+}
+
+body {
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+h1 {
+    font-family: var(--font-primary);
+    color: var(--color5);
+}
+
+.auth-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/img/fondito.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--color1);
+}
+
+.login-container, .register-container {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid var(--color3);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px var(--color4);
+    padding: 25px;
+    background-color: var(--color2);
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--color4);
+    border-radius: 5px;
+    background-color: var(--color1);
+}
+
+.auth-form button {
+    cursor: pointer;
+    background-color: var(--color3);
+    color: var(--color1);
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: background-color 0.3s, opacity 0.3s;
+    line-height: 20px;
+}
+
+.auth-form button:hover {
+    background-color: var(--color4);
+    opacity: 0.8;
+}
+
+.auth-form button:disabled {
+    opacity: 0.3;
+}
+
+.auth-form-label {
+    width: 100%;
+    max-width: 400px;
+    font-weight: 500;
+    color: var(--color5);
+}
+
+.auth-form-logo-container {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--color5);
+}
+
+.auth-form-switch-label {
+    color: var(--color3);
+    font-weight: bold;
+    font-size: 14px;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.auth-form-switch-label:hover {
+    opacity: 0.8;
+}
+
+.auth-form-validation-message {
+    width: 100%;
+    max-width: 400px;
+    color: red;
+    font-size: 14px;
+}
+
+.register-container {
+    overflow: auto;
+    min-height: 95%;
+}
+
+@media (max-width: 600px) {
+    .login-container, .register-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .auth-form input,
+    .auth-form button,
+    .auth-form-label,
+    .auth-form-validation-message {
+        width: 100%;
+        max-width: 100%;
+    }
+}
