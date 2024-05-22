@@ -1,0 +1,321 @@
+.mini-ventana {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; /* Reducir el ancho de la mini ventana */
+    max-width: 90%;
+    padding: 25px;
+    background-color: #77ACA2; /* Cambiar el color de fondo */
+    border-radius: 10px;
+    color: #ffffff; /* Cambiar el color del texto */
+    font-size: 18px; /* Tamaño de la letra del texto */
+    line-height: 2; /* Altura de línea */
+    height: 77vh;
+    font-size: 20px;
+}
+
+.mini-ventana form {
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-ventana input,select{
+    margin-bottom: 25px;
+    background-color: #F4E9CD;
+    color: #000;
+    padding: 3px 10px; /* Increase padding for a larger button */
+    font-size: 16px; /* Increase font size */
+    border: none; /* Remove any default border */
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+.mini-ventana button {
+    margin-bottom: 25px;
+    background-color: #031926;
+    color: #ffffff;
+    padding: 8px 30px; /* Increase padding for a larger button */
+    font-size: 20px; /* Increase font size */
+    border: none; /* Remove any default border */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.2s, transform 0.4s; /* Add transitions for hover effects */
+}
+
+.mini-ventana button:hover {
+    background-color: #02212d; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.public-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Reducir el ancho de la mini ventana */
+    max-width: 70%;
+    padding: 24px;
+    background-color: #77ACA2; /* Cambiar el color de fondo */
+    border-radius: 10px;
+    color: #ffffff; /* Cambiar el color del texto */
+    font-size: 18px; /* Tamaño de la letra del texto */
+    line-height: 2; /* Altura de línea */
+    font-size: 23px;
+    max-height: 70vh; /* Establecer una altura máxima */
+    overflow-y: auto;
+
+}
+
+.autor-fecha-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.public-autor,
+.public-fechaPublic {
+    flex: 1;
+}
+
+.public-title,
+.public-description {
+    margin-top: 10px;
+    display: block;
+}
+
+.comentarios-container {
+    margin-top: 10px;
+    background-color: #588d83;
+}
+
+.comentario-buttons-container {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+.comentario-buttons-container button {
+    background-color: #031926; /* Color de fondo para los botones */
+    color: #ffffff; /* Color del texto */
+    padding: 8px 16px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar el cursor */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones */
+}
+
+.comentario-buttons-container button:hover {
+    background-color: #02212d; /* Cambio de color de fondo en hover */
+}
+
+.public-container-img {
+    display: flex;
+    justify-content: center;
+}
+
+.boton-eliminar {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    padding: 24px;
+    background-color: #77ACA2;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 2;
+    height: 70vh;
+    font-size: 23px;
+}
+
+.boton-eliminar button {
+    width: 100%; /* Hacer que el botón ocupe todo el ancho disponible */
+    padding: 15px; /* Aumentar el relleno para hacerlo más grande */
+    font-size: 20px; /* Aumentar el tamaño del texto */
+    background-color: #468189; /* Color de fondo para el botón */
+    color: #ffffff; /* Color del texto */
+    border: none; /* Eliminar el borde */
+    border-radius: 8px; /* Redondear los bordes */
+    cursor: pointer; /* Cambiar el cursor */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones */
+}
+
+.boton-eliminar button:hover {
+    background-color: #355c56; /* Cambio de color de fondo en hover */
+}
+
+.dashboard-container {
+    width: 100%;
+    height: 90vh;
+    background: #9DBEBB;
+}
+
+.nav-container {
+    position: fixed; /* Cambiar a fixed para que el navbar se mantenga en la parte superior */
+    top: 0; /* Asegurar que esté en la parte superior */
+    left: 0; /* Asegurar que esté alineado a la izquierda */
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    border-bottom: 2px solid rgb(41, 37, 37);
+    box-shadow: 0 0 5px 0 rgb(61, 61, 61);
+    box-sizing: border-box;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    background: #031926;
+}
+
+
+.nav-logo-container {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.nav-button {
+    font-size: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #d2d2dd;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    opacity: 0.7;
+}
+
+.nav-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+
+.content-container {
+    position: relative; /* Cambiar a relative para centrar el contenido */
+    margin: 0 auto; /* Centrar horizontalmente */
+    margin-top: 65px;
+    height: auto; /* Ajustar la altura para ocupar el espacio disponible menos la altura del navbar */
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+    width: 100%; /* Asegurarse de que el ancho sea del 100% del contenedor padre */
+    padding: 20px; /* Espaciado interno opcional */
+    overflow-x: hidden; /* Ocultar desbordamiento horizontal */
+
+}
+
+.publicaciones-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px; /* Space between grid items */
+    width: 100%;
+}
+
+.publicaciones-card {
+    padding: 27px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background: #468189;
+    border-radius: 15px;
+    color: #ffffff; /* Cambiar el color del texto */
+    font-size: 18px; /* Tamaño de la letra del texto */
+    line-height: 2;
+
+}
+
+.publicaciones-card:hover {
+    transform: scale(1.1);
+
+}
+
+.publicaciones-card-title {
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.publicaciones-card-text {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #0e0e10;
+}
+
+.settings-container {
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.settings-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 5px 0 lightgrey;
+    background-color: #2f2f30;
+    width: 400px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.settings-form button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #0b336b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.settings-form button:hover {
+    opacity: 0.7;
+}
+
+.settings-form button:disabled {
+    opacity: 0.3;
+}
+
+
+.settings-stream-key-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 5px 0 lightgrey;
+    background-color: #2f2f30;
+    padding: 10px;
+}
+
+
+
+.spinner-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+.spinner {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
